@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+	$(function(){
+    $('a[href^=#]').click(function(){
+        var speed = 800;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $("html, body").animate({scrollTop:position}, speed, "swing");
+        return false;
+    });
+});
+</script>
+<head>
+	<meta charset="utf-8">
+	<title>Takayoshi Nishio</title>
+	<link rel="stylesheet" type="text/css" href="mypage.css">
+</head>
+	<body>
+		<header>
+			<div class="header-design">
+			</div>
+		</header>
+
+		<div class="main" id="top">
+			<p>TAKAYOSHI NISHIO</p>
+			<div class="btn-profile">
+				<a href="#profile">→PROFILE</a>
+			</div>
+
+			<div class="btn-SNS">
+				<a href="#sns">→SNS</a>
+			</div>
+		</div>
+
+		<div class="profile" id="profile">
+			<p style="font-size:50px">PROFILE</p></br>
+			<p>Birth : 1/11/1993</p></br>
+			<p>From : KOBE</p></br>
+			<p>Hobby : Soccer, Motor Bike, Guiter</p></br>
+			<p>Skill : HTML, CSS, JavaScript, jQuery</p></br>
+
+			<a href="#sns"></br>▼</a>
+		</div>
+
+		<div class="sns" id="sns">
+			<p style="font-size:50px">SNS</p></br></br>
+			<a href="https://www.facebook.com/oihsinnnnn"><img src="image/facebook.png"></a>
+			<a href="https://github.com/ntaka0111"><img src="image/github.png"></a>
+			<a href="https://newspicks.com/user/328638/"><img src="image/newspicks.png"></a></br></br></br></br></br></br></br>
+			<a href="#top"></br>▲</a>
+		</div>
+
+		<footer>
+			<div class="footer-design">
+			</div>
+		</footer>
+	</body>
+</html>
